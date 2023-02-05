@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="button_to_search_location_text">Перейти к экрану поиска локации</string>
+	<string name="button_exit">Выйти</string>
+</resources>
