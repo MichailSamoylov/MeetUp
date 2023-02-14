@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/root_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:fillViewport="true"
+		android:isScrollContainer="true">
+
+		<LinearLayout
+			android:id="@+id/content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/margin_260"
+			android:orientation="vertical">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/loginInput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="@dimen/margin_64"
+				app:endIconDrawable="@drawable/icon_phone"
+				app:endIconTintMode="multiply"
+				app:endIconMode="custom"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/loginHeader"
+				app:errorTextAppearance="@style/Theme.MeetUp.ErrorText"
+				style="@style/ThemeOverlay.MeetUp.LoginTextInput">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/loginEdit"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:hint="@string/login_email"
+					android:inputType="textEmailAddress"
+					style="@style/ThemeOverlay.MeetUp.LoginTextInput"/>
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/loginPasswordInput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="@dimen/margin_64"
+				android:layout_marginTop="@dimen/margin_16"
+				app:passwordToggleDrawable="@drawable/icons_lock"
+				app:passwordToggleEnabled="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/loginInput"
+				app:errorTextAppearance="@style/Theme.MeetUp.ErrorText"
+				style="@style/ThemeOverlay.MeetUp.LoginTextInput">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/loginPasswordEdit"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/login_password"
+					android:inputType="textPassword"
+					style="@style/ThemeOverlay.MeetUp.LoginTextInput"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/logInButton"
+				android:layout_width="@dimen/size_236"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginHorizontal="@dimen/margin_24"
+				android:layout_marginTop="@dimen/margin_32"
+				android:text="@string/login_button_text"
+				android:paddingTop="@dimen/padding_16"
+				android:paddingBottom="@dimen/padding_16"
+				app:layout_constraintEnd_toEndOf="@+id/loginPasswordInput"
+				app:layout_constraintStart_toStartOf="@+id/loginPasswordInput"
+				app:layout_constraintTop_toBottomOf="@+id/loginPasswordInput"
+				style="@style/ThemeOverlay.MeetUp.LoginPositiveButton"/>
+
+		</LinearLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="@dimen/size_85"
+		android:layout_height="@dimen/size_85"
+		android:layout_gravity="center"
+		android:visibility="gone"
+		android:indeterminateTint="@color/dark_grey"/>
+
+</FrameLayout>

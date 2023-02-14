@@ -1,9 +1,11 @@
 package com.app.meetup
 
 import android.app.Application
+import com.app.components.validators.di.validatorsModule
 import com.app.meetup.di.ciceroneModule
 import com.app.meetup.di.navigationModule
-import com.app.screens.home.di.startScreenModule
+import com.app.screens.home.di.homeModule
+import com.app.screens.login.di.loginModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -20,7 +22,9 @@ class App : Application() {
 			modules(
 				ciceroneModule,
 				navigationModule,
-				startScreenModule
+				loginModule,
+				homeModule,
+				validatorsModule,
 			)
 		}
 	}

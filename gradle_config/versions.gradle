@@ -10,6 +10,7 @@ ext.Versions = [
 	CONSTRAINT_LAYOUT: "2.0.4",
 	RETROFIT         : "2.9.0",
 	OKHTTP           : "4.9.0",
+	DECORO           : "1.5.0",
 	GSON             : "2.8.9",
 	MOCKITO_CORE     : "4.1.0",
 	MOCKITO_KOTLIN   : "4.0.0",

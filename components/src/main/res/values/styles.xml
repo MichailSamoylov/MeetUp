@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+	<style name="Theme.MeetUp"
+		parent="Theme.MaterialComponents.Light.NoActionBar">
+		<!-- Default background color. -->
+		<!-- Primary brand color. -->
+		<item name="colorPrimary">@color/dark_grey</item>
+		<item name="colorPrimaryVariant">@color/dark_grey</item>
+		<item name="colorOnPrimary">@color/white</item>
+		<!-- Secondary brand color. -->
+		<item name="colorSecondary">@color/light_grey</item>
+		<item name="colorSecondaryVariant">@color/light_grey</item>
+		<item name="colorOnSecondary">@color/white</item>
+		<!-- Status bar color. -->
+		<item tools:targetApi="23"
+			name="android:statusBarColor">?attr/colorOnPrimary
+		</item>
+		<item tools:targetApi="23"
+			name="android:windowLightStatusBar">true
+		</item>
+		<!-- Customize your theme here. -->
+	</style>
+
+	<style name="Theme.MeetUp.SimplyText">
+		<item name="fontFamily">@font/roboto_medium</item>
+		<item name="textAllCaps">false</item>
+		<item name="fontStyle">normal</item>
+		<item name="android:textColor">@color/dark_grey</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+	</style>
+
+	<style name="Theme.MeetUp.LargeSimplyText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="android:textSize">@dimen/text_size_20</item>
+	</style>
+
+	<style name="Theme.MeetUp.HelpText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="android:textColor">@color/dark_grey</item>
+		<item name="android:textSize">@dimen/text_size_10</item>
+	</style>
+
+	<style name="Theme.MeetUp.SearchField"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="startIconDrawable">@drawable/ic_magnifying_glass</item>
+		<item name="android:textColorHint">@color/light_grey</item>
+		<item name="android:textColor">@color/dark_grey</item>
+		<item name="boxBackgroundColor">@color/pale_light_grey</item>
+		<item name="boxCornerRadiusBottomStart">@dimen/radius_32</item>
+		<item name="boxCornerRadiusBottomEnd">@dimen/radius_32</item>
+		<item name="boxCornerRadiusTopEnd">@dimen/radius_32</item>
+		<item name="boxCornerRadiusTopStart">@dimen/radius_32</item>
+		<item name="boxStrokeWidth">@dimen/size_0</item>
+		<item name="boxStrokeWidthFocused">@dimen/size_0</item>
+	</style>
+
+	<style name="Theme.MeetUp.TextInput"
+		parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+		<item name="fontFamily">@font/roboto_regular</item>
+		<item name="textAllCaps">false</item>
+		<item name="fontStyle">normal</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+		<item name="android:textColorHint">@color/light_grey</item>
+		<item name="android:textColor">@color/dark_grey</item>
+		<item name="boxCornerRadiusBottomStart">@dimen/radius_10</item>
+		<item name="boxCornerRadiusBottomEnd">@dimen/radius_10</item>
+		<item name="boxCornerRadiusTopEnd">@dimen/radius_10</item>
+		<item name="boxCornerRadiusTopStart">@dimen/radius_10</item>
+		<item name="boxStrokeWidth">@dimen/size_4</item>
+		<item name="boxStrokeWidthFocused">@dimen/size_4</item>
+	</style>
+
+	<style name="Theme.MeetUp.ToolbarButtonBase"
+		parent="Widget.MaterialComponents.Button.TextButton">
+		<item name="iconGravity">textStart</item>
+		<item name="android:insetLeft">@dimen/inset_0</item>
+		<item name="android:insetTop">@dimen/inset_0</item>
+		<item name="android:insetRight">@dimen/inset_0</item>
+		<item name="android:insetBottom">@dimen/inset_0</item>
+		<item name="android:minWidth">@dimen/min_width_0</item>
+		<item name="android:padding">@dimen/padding_16</item>
+		<item name="iconPadding">@dimen/padding_0</item>
+		<item name="iconTint">@color/white</item>
+		<item name="rippleColor">@color/white</item>
+	</style>
+
+	<style name="Theme.MeetUp.ToolbarBackButton"
+		parent="Theme.MeetUp.ToolbarButtonBase">
+		<item name="icon">@drawable/ic_arrow_back</item>
+		<item name="iconTint">@color/dark_grey</item>
+	</style>
+
+	<style name="Theme.MeetUp.ScreenHeaderText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="fontFamily">@font/roboto_bold</item>
+		<item name="android:textSize">@dimen/text_size_24</item>
+		<item name="android:textColor">@color/dark_grey</item>
+	</style>
+
+	<style name="Theme.MeetUp.SectionHeaderText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="fontFamily">@font/roboto_medium</item>
+		<item name="android:textSize">@dimen/text_size_18</item>
+		<item name="android:textColor">@color/dark_grey</item>
+	</style>
+
+	<style name="Theme.MeetUp.TaskHeaderText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="fontFamily">@font/roboto_bold</item>
+		<item name="android:textSize">@dimen/text_size_20</item>
+		<item name="android:textColor">@color/dark_grey</item>
+	</style>
+
+	<style name="Theme.MeetUp.ChipHeaderText"
+		parent="Theme.MeetUp.SimplyText">
+		<item name="fontFamily">@font/roboto_bold</item>
+		<item name="android:textSize">@dimen/text_size_15</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="Theme.MeetUp.ErrorText"
+		parent="Theme.MeetUp.SearchField">
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/warning_color</item>
+	</style>
+
+	<style name="Theme.MeetUp.WarningText"
+		parent="Theme.MeetUp.SearchField">
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/warning_color</item>
+	</style>
+
+	<!--Text по разделам-->
+	<style name="ThemeOverlay.MeetUp.LoginTextInput"
+		parent="Theme.MeetUp.SearchField">
+		<item name="startIconDrawable">@null</item>
+		<item name="boxStrokeColor">@color/light_grey</item>
+		<item name="boxBackgroundColor">@color/white</item>
+		<item name="boxStrokeWidth">@dimen/size_2</item>
+		<item name="boxStrokeWidthFocused">@dimen/size_2</item>
+		<item name="errorEnabled">true</item>
+	</style>
+
+	<!--Button-->
+	<style name="Theme.MeetUp.ButtonBase"
+		parent="Widget.MaterialComponents.Button">
+		<item name="textAllCaps">false</item>
+		<item name="fontStyle">normal</item>
+		<item name="android:textAlignment">center</item>
+		<item name="cornerRadius">@dimen/radius_10</item>
+		<item name="android:elevation">@dimen/elevation_8</item>
+	</style>
+
+	<style name="Theme.MeetUp.PositiveButton"
+		parent="Theme.MeetUp.ButtonBase">
+		<item name="fontFamily">@font/roboto_bold</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/text_size_20</item>
+	</style>
+
+	<style name="Theme.MeetUp.NegativeButton"
+		parent="Theme.MeetUp.ButtonBase">
+		<item name="fontFamily">@font/roboto_regular</item>
+		<item name="android:textColor">@color/dark_grey</item>
+		<item name="backgroundTint">@color/white</item>
+	</style>
+
+	<!--Button по разделам-->
+	<style name="ThemeOverlay.MeetUp.LoginPositiveButton"
+		parent="Theme.MeetUp.PositiveButton">
+		<item name="android:textSize">@dimen/text_size_16</item>
+		<item name="backgroundTint">@color/dark_grey</item>
+	</style>
+
+</resources>

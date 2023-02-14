@@ -1,4 +1,4 @@
-package com.app.meetup.navigation
+package com.app.meetup.navigation.routers
 
 import com.app.screens.home.presentation.HomeRouter
 import com.github.terrakok.cicerone.Router

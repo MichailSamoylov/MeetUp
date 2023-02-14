@@ -18,6 +18,7 @@ ext.Dependencies = [
 	MATERIAL               : "com.google.android.material:material:${Versions.MATERIAL}",
 	LIFECYCLE              : "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.LIFECYCLE}",
 	CONSTRAINT_LAYOUT      : "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}",
+	DECORO                     : "ru.tinkoff.decoro:decoro:${Versions.DECORO}",
 
 	CICERONE               : "com.github.terrakok:cicerone:${Versions.CICERONE}",
 	FRAGMENT               : "androidx.fragment:fragment-ktx:${Versions.FRAGMENT}",

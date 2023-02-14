@@ -1,0 +1,26 @@
+<resources>
+	<string name="login_email">Почта</string>
+	<string name="login_header">Личный Кабинет Сотрудника</string>
+	<string name="login_header_hint">Для входа используейте корпоративную почту или номер телефона</string>
+	<string name="login_phone">Номер телефона</string>
+	<string name="login_password">Пароль</string>
+	<string name="signUp">Регистрация</string>
+	<string name="login_forgot_password">Забыли пароль?</string>
+	<string name="login_button_text">ВХОД</string>
+	<string name="login_success_text">Добро пожаловать!</string>
+	<string name="login_success_exit_text">Отлично!</string>
+	<string name="login_error_text">Не удалось войти.\nПроверьте введенные данные и попробуйте еще раз.</string>
+	<string name="login_error_repeat_text">Повторить</string>
+	<string name="login_dialog_close_text">Закрыть</string>
+	<string name="login_empty_password_error">Введите пароль</string>
+	<string name="login_mock_on">Mock on</string>
+	<string name="login_mock_off">Mock off</string>
+	<string name="login_empty_string">\u0020</string>
+	<string name="login_empty_email_error">Укажите адрес электронной почты</string>
+	<string name="login_format_email_error">Указан неизвестный формат почтового адреса</string>
+	<string name="login_length_email_error">Слишком длинное адрес</string>
+	<string name="login_domain_length_email_error">Слишком длинное имя почтового адреса</string>
+	<string name="login_empty_phone_error">Укажите номер телефона</string>
+	<string name="login_length_phone_error">Слишком длинный номер</string>
+	<string name="login_format_phone_error">Недоступный формат номера</string>
+</resources>

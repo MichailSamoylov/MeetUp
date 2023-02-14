@@ -1,2 +1,5 @@
 include ':app'
 include ':screens:home'
+include ':screens:login'
+include ':components'
+include ':network'
