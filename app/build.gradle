@@ -15,8 +15,13 @@ dependencies {
 	implementation Dependencies.KOIN_ANDROID
 	implementation Dependencies.RETROFIT
 
+	implementation 'com.yandex.android:maps.mobile:4.2.2-full'
+	implementation 'com.google.android.gms:play-services-location:20.0.0'
+
 	implementation project(':screens:home')
 	implementation project(':screens:login')
+	implementation project(':screens:hosts')
 	implementation project(':network')
 	implementation project(':components')
+	implementation project(':screens:map')
 }

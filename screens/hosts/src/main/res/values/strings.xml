@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="main_host_bar_section_name_main">главная</string>
+	<string name="main_host_bar_section_name_tasks">карта</string>
+	<string name="main_host_bar_section_name_profile">профиль</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/main_section"
+		android:title="@string/main_host_bar_section_name_main"
+		android:icon="@drawable/icon_main"/>
+	<item
+		android:id="@+id/map_section"
+		android:title="@string/main_host_bar_section_name_tasks"
+		android:icon="@drawable/icon_tasks"/>
+	<item
+		android:id="@+id/profile_section"
+		android:title="@string/main_host_bar_section_name_profile"
+		android:icon="@drawable/icon_profile"/>
+</menu>

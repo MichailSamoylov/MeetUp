@@ -2,32 +2,36 @@ package com.app.meetup.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.app.components.navigation.GlobalRouter
+import com.app.components.navigation.named.RouterNames.FULL_SCREEN
 import com.app.meetup.R
+import com.app.screens.hosts.getMainHostScreen
 import com.app.screens.login.getLoginScreen
 import com.github.terrakok.cicerone.NavigatorHolder
-import com.github.terrakok.cicerone.Router
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import org.koin.android.ext.android.inject
+import org.koin.core.qualifier.named
 
 class MainActivity : AppCompatActivity() {
 
-	private val router: Router by inject()
-	private val navigateHolder: NavigatorHolder by inject()
+	private val globalRouter: GlobalRouter by inject()
+	private val fullScreenNavigateHolder: NavigatorHolder by inject(named(FULL_SCREEN))
 	private val navigator = AppNavigator(this, R.id.container)
 
 	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
-		router.newRootScreen(getLoginScreen())
+		super.onCreate(savedInstanceState)
+//		globalRouter.newRootScreen(getLoginScreen())
+		globalRouter.newRootScreen(getMainHostScreen())
 	}
 
 	override fun onResume() {
 		super.onResume()
-		navigateHolder.setNavigator(navigator)
+		fullScreenNavigateHolder.setNavigator(navigator)
 	}
 
 	override fun onPause() {
 		super.onPause()
-		navigateHolder.removeNavigator()
+		fullScreenNavigateHolder.removeNavigator()
 	}
 }
