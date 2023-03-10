@@ -11,6 +11,7 @@ buildscript {
 		classpath Dependencies.KOTLIN
 	}
 }
+
 allprojects {
 	repositories {
 		google()

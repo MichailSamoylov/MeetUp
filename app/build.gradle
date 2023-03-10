@@ -24,4 +24,6 @@ dependencies {
 	implementation project(':network')
 	implementation project(':components')
 	implementation project(':screens:map')
+	implementation project(':shared:events')
+	implementation project(':shared:accountdata')
 }

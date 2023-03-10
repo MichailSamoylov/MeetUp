@@ -1,9 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+	android:layout_height="match_parent"
+	android:orientation="vertical">
 
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elevation="@dimen/elevation_8"
+		android:background="@drawable/white_background_rectangle">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin_8"
+			android:layout_marginTop="@dimen/margin_16"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="@dimen/size_50"
+				android:layout_height="@dimen/size_50"
+				android:layout_gravity="center_vertical"
+				android:layout_marginStart="@dimen/margin_16"
+				android:src="@drawable/stub_image_profile"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginStart="@dimen/margin_16"
+				android:layout_weight="0.1"
+				android:elevation="@dimen/elevation_8"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="Hello Valentin"
+					style="@style/Theme.MeetUp.LargeSimplyText"
+				/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/welcome_text"
+					android:textSize="@dimen/text_size_14"
+					style="@style/Theme.MeetUp.SimplyText"
+				/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="@dimen/size_32"
+				android:layout_height="@dimen/size_32"
+				android:layout_gravity="center_vertical"
+				android:layout_marginEnd="@dimen/margin_16"
+				android:layout_marginStart="@dimen/margin_16"
+				android:src="@drawable/ic_loguot"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_16"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="@dimen/margin_16"
+			android:text="@string/your_event_text"
+			style="@style/Theme.MeetUp.SimplyText"
+		/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_16"
+			android:background="@drawable/white_background_rectangle"
+			android:elevation="@dimen/elevation_8"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_16"
+				android:layout_marginVertical="@dimen/margin_48"
+				android:layout_weight="0.1"
+				android:text="@string/navigate_to_your_event_text"
+				style="@style/Theme.MeetUp.SimplyText"/>
+
+			<ImageButton
+				android:id="@+id/button_navigate_to_your_events"
+				android:layout_width="@dimen/size_72"
+				android:layout_height="@dimen/size_72"
+				android:layout_gravity="center_vertical"
+				android:layout_marginEnd="@dimen/margin_16"
+				android:background="@drawable/ic_navigate_to_button"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_16"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="@dimen/margin_16"
+			android:text="@string/all_event_text"
+			style="@style/Theme.MeetUp.SimplyText"
+		/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_16"
+			android:background="@drawable/white_background_rectangle"
+			android:elevation="@dimen/elevation_8"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_16"
+				android:layout_marginVertical="@dimen/margin_48"
+				android:layout_weight="0.1"
+				android:text="@string/navigate_to_all_events"
+				style="@style/Theme.MeetUp.SimplyText"/>
+
+			<ImageButton
+				android:id="@+id/button_navigate_to_all_events"
+				android:layout_width="@dimen/size_72"
+				android:layout_height="@dimen/size_72"
+				android:layout_gravity="center_vertical"
+				android:layout_marginEnd="@dimen/margin_16"
+				android:background="@drawable/ic_navigate_to_button"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

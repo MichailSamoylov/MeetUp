@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object InternetUrl {
 
-	const val BASE_URL = "https://meet-up"
+	const val BASE_URL = "https://meet-mate"
 }
 
 fun apiProvide(): Retrofit = Retrofit.Builder().apply {

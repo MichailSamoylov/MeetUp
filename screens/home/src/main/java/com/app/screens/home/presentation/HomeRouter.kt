@@ -2,7 +2,7 @@ package com.app.screens.home.presentation
 
 interface HomeRouter {
 
-	fun navigateToSearchScreen()
+	fun navigateToAllEvents()
 
-	fun navigateBack()
+	fun navigateToYourEvents()
 }

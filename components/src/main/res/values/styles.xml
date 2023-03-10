@@ -42,7 +42,10 @@
 	</style>
 
 	<style name="Theme.MeetUp.SearchField"
-		parent="Theme.MeetUp.SimplyText">
+		parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+		<item name="fontFamily">@font/roboto_regular</item>
+		<item name="textAllCaps">false</item>
+		<item name="fontStyle">normal</item>
 		<item name="startIconDrawable">@drawable/ic_magnifying_glass</item>
 		<item name="android:textColorHint">@color/light_grey</item>
 		<item name="android:textColor">@color/dark_grey</item>
@@ -51,8 +54,9 @@
 		<item name="boxCornerRadiusBottomEnd">@dimen/radius_32</item>
 		<item name="boxCornerRadiusTopEnd">@dimen/radius_32</item>
 		<item name="boxCornerRadiusTopStart">@dimen/radius_32</item>
-		<item name="boxStrokeWidth">@dimen/size_0</item>
-		<item name="boxStrokeWidthFocused">@dimen/size_0</item>
+		<item name="backgroundTint">@color/white</item>
+		<item name="boxStrokeWidth">@dimen/size_2</item>
+		<item name="boxStrokeWidthFocused">@dimen/size_4</item>
 	</style>
 
 	<style name="Theme.MeetUp.TextInput"

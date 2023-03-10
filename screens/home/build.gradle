@@ -14,4 +14,6 @@ dependencies {
 	implementation Dependencies.KOIN_CORE
 	implementation Dependencies.KOIN_ANDROID
 	implementation Dependencies.RETROFIT
+
+	implementation project(':components')
 }

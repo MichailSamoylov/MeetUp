@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="button_to_search_location_text">Перейти к экрану поиска локации</string>
+	<string name="welcome_text">Welcome to MeetMate</string>
+	<string name="your_event_text">Your event</string>
+	<string name="navigate_to_your_event_text">Перейти к списку ваших ивентов</string>
+	<string name="all_event_text">All event</string>
+	<string name="navigate_to_all_events">Перейти к списку всех ивентов</string>
 	<string name="button_exit">Выйти</string>
 </resources>

@@ -6,11 +6,11 @@ class HomeViewModel(
 	private val router: HomeRouter
 ) : ViewModel() {
 
-	fun navigateToSearchScreen(){
-		router.navigateToSearchScreen()
+	fun navigateToAllEvents(){
+		router.navigateToAllEvents()
 	}
 
-	fun navigateBack(){
-		router.navigateBack()
+	fun navigateToYourEvents(){
+		router.navigateToYourEvents()
 	}
 }
